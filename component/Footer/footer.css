@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 2% 6%;
+  background-color: black;
+}
+.footer {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  text-align: center;
+}
+.brand > p{
+    padding-top: 20px;
+}
+ul {
+  list-style: none;
+}
+.products > ul > li{
+    padding-top: 10px;
+}
+.company > ul > li{
+    padding-top: 10px;
+}
+.support > ul > li{
+    padding-top: 10px;
+}
+.domains > ul > li{
+    padding-top: 10px;
+}

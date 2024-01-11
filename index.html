@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moshify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top Nav Section Start  -->
+        <nav>
+          <a href="#"><img src="icons/logo.svg" alt="logo" /> </a>
+          <div class="nav-links" id="menu">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="#">Hosting</a></li>
+              <li><a href="#">VPS</a></li>
+              <li><a href="#">Domain</a></li>
+              <li><a href="#">Price</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+      <!-- Top Nav Section End  -->
+      <section class="container">
+        <div class="header_section">
+          <div class="text_section">
+            <h1 class="text-white">
+              Cloud Hosting <br />
+              for pros
+            </h1>
+            <p class="text-white">
+              Deploy your website in less than 60 seconds.
+            </p>
+            <button class="btn">get started</button>
+          </div>
+          <div class="img_section">
+            <img src="images/banner.png" alt="banner image" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <!-- Package Section Start -->
+      <section class="package_section py container">
+
+        <!-- Title Section Start -->
+        <div class="title text-center">
+          <h2>The best webhosting Starting at per month</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor <br />
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <!-- Title Section End -->
+
+        <!-- Search Section Start  -->
+        <div class="find_section text-center">
+          <input type="text" placeholder="Enter domain name here" class="search">
+          <button class="btn search_btn"> Search</button>
+        </div>
+        <!-- Search Section End  -->
+
+        <!-- Domain and price Start  -->
+        <div class="domain_price text-center py">
+          <ul class="price primary_color">
+            <li>.com $9.26</li>
+            <li>.sg $7.91</li>
+            <li>.space $12.98</li>
+            <li>.info $14.15</li>
+            <li>.net $16.15</li>
+            <li>.xyz $10.15</li>
+            <li>more</li>
+          </ul>
+
+        </div>
+        <!-- Domain and price End  -->
+
+        <!-- Package Card Start  -->
+        <div class="card_manager">
+          <div class="card">
+            <div class="card-header">
+              <span>Entry</span>
+              <h2 class="price">
+                $14<span class="month">/month</span
+                ><span class="percentage">10% OFF</span>
+              </h2>
+              <p>Easy start on the cloud</p>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Unlimited Websites</li>
+                <li>Unlimited Bandwidth</li>
+                <li>100 GB SSD Storage</li>
+                <li>3 GB RAM</li>
+              </ul>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+    
+          <!-- card two  -->
+    
+          <div class="card">
+            <div class="card-header">
+              <span>Business</span>
+              <h2 class="price">
+                $24<span class="month">/month</span
+                ><span class="percentage">20% OFF</span>
+              </h2>
+              <p>Optimal Cloud Experience</p>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Unlimited Websites</li>
+                <li>Unlimited Bandwidth</li>
+                <li>100 GB SSD Storage</li>
+                <li>3 GB RAM</li>
+              </ul>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+    
+          <!-- Card three  -->
+    
+          <div class="card">
+            <div class="card-header">
+              <span>Business Plus</span>
+              <h2 class="price">
+                $54<span class="month">/month</span
+                ><span class="percentage">10% OFF</span>
+              </h2>
+              <p>Easy start on the cloud</p>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Unlimited Websites</li>
+                <li>Unlimited Bandwidth</li>
+                <li>100 GB SSD Storage</li>
+                <li>3 GB RAM</li>
+              </ul>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package Card End  -->
+
+        <!-- control section  -->
+
+        <div class="container">
+          <h2>User-Friendly Control Panel</h2>
+          <div class="control_section">
+            <div class="control_img">
+              <img src="/images/ipad.png" alt="" />
+            </div>
+            <div>
+              <div class="control_text">
+                <img src="/icons/snap.svg" alt="snap image" />
+                <div class="text">
+                  <h2>Easy Start & Managed Updates</h2>
+                  <p>
+                    Our cloud plans include easy onboarding for new <br />
+                    and existing sites and managed WordPress and <br />
+                    WooCommerce auto-updates
+                  </p>
+                </div>
+              </div>
+    
+              <div class="control_text">
+                <img src="/icons/growth.svg" alt="snap image" />
+                <div class="text">
+                  <h2>Staging, Git & WP-CLI</h2>
+                  <p>
+                    We make your Wordpress and WooCommerce <br />
+                    development flow easier with a convenient staging <br />
+                    tool and Git and WP-CLI integration
+                  </p>
+                </div>
+              </div>
+    
+              <div class="control_text">
+                <img src="/icons/wordpress.svg" alt="snap image" />
+                <div class="text">
+                  <h2>Dynamic Caching & More</h2>
+                  <p>
+                    Speed up your Wordpress and Woo sites with our SG <br />
+                    Optimizer plugin through smart dynamic caching and <br />
+                    multiple other performance optimizations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial  -->
+      <div class="container">
+        <div class="title">
+            <h1>What our Customer are saying</h1>
+            <p>Quis imsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan</p>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial_img">
+                <img src="/images/testimonial.jpg" alt="testimonial ">
+            </div>
+            <div class="testimonial_text">
+                <q>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br> Quis impsum suspendisse ultrices gravida. Risus <br> Commodo viverra maecenas accumsan lacus <br> vel facilisis.</q>
+                <h5>--Jhon Lumeo</h5>
+                <p>Mosh Company CEO</p>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    <div class="container">
+      <div class="footer">
+        <div class="brand">
+          <img src="/icons/logo.svg" alt="logo" />
+          <p>copyright 2024 Mosh</p>
+        </div>
+        <div class="products">
+            <h2>Products</h2>
+          <ul>
+            <li>wordpress hosting</li>
+            <li>free automated wordpress</li>
+            <li>migrations</li>
+            <li>domain names</li>
+            <li>monthly web hosting</li>
+          </ul>
+        </div>
+        <div class="company">
+            <h2>company</h2>
+          <ul>
+            <li>about</li>
+            <li>affiliates</li>
+            <li>blog</li>
+            <li>careers</li>
+            <li>community</li>
+            <li>news</li>
+            <li>green hosting</li>
+          </ul>
+        </div>
+        <div class="support">
+            <h2>support</h2>
+          <ul>
+            <li>contact</li>
+            <li>knowledge base</li>
+            <li>forums</li>
+            <li>system status</li>
+            <li>web hosting</li>
+            <li>dream compute</li>
+          </ul>
+        </div>
+        <div class="domains">
+            <h2>domains</h2>
+          <ul>
+            <li>domain checker</li>
+            <li>domain transfer</li>
+            <li>free domain</li>
+            <li>xyz domain</li>
+            <li>cheap SSL certificate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+            

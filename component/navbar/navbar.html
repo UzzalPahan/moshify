@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="#"><img src="../../icons/logo.svg" alt="logo" /> </a>
+        <div class="nav-links" id="menu">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">VPS</a></li>
+            <li><a href="#">Domain</a></li>
+            <li><a href="#">Price</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+    <script>
+        const menu = document.getElementById('menu');
+        function showMenu(){
+            menu.style.right= "0px"
+        }
+        function hideMenu(){
+            menu.style.right= "-200px"
+        }
+    </script>
+  </body>
+</html>

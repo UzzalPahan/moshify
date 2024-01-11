@@ -406,3 +406,11 @@ ul {
 .domains > ul > li {
   padding-top: 10px;
 }
+
+/* responsive  */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -15,21 +15,28 @@
 .brand {
   text-align: center;
 }
-.brand > p{
-    padding-top: 20px;
+.brand > p {
+  padding-top: 20px;
 }
 ul {
   list-style: none;
 }
-.products > ul > li{
-    padding-top: 10px;
+.products > ul > li {
+  padding-top: 10px;
 }
-.company > ul > li{
-    padding-top: 10px;
+.company > ul > li {
+  padding-top: 10px;
 }
-.support > ul > li{
-    padding-top: 10px;
+.support > ul > li {
+  padding-top: 10px;
 }
-.domains > ul > li{
-    padding-top: 10px;
+.domains > ul > li {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

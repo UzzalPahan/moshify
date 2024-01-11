@@ -1,11 +1,10 @@
- body {
+#card_section {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 .card_manager{
     display: flex;
@@ -86,4 +85,12 @@ li {
 
 .buy-button:hover{
   background-color: red;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+.card_manager {
+  flex-direction: column;
+}
+  
 }

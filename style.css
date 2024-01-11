@@ -331,6 +331,34 @@ li {
   }
 }
 
+/* ads section  */
+.ads {
+  background-color: rgb(96, 62, 245);
+  width: 60vw;
+  margin: 10px auto;
+  padding: 2% 4%;
+  color: #fff;
+  border-radius: 10px;
+
+}
+.ads_text_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ads_text > p{
+    padding-top: 5px;
+}
+button{
+    padding: 10px 25px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
 /* footer css  */
 footer {
   background-color: #000;

@@ -29,3 +29,19 @@ button{
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .ads_text_container {
+    flex-direction: column;
+  }
+  .ads_text > h1{
+    font-size: 1rem;
+  }
+  .ads_text > p{
+    font-size: 0.8rem;
+  }
+  .ads_text_container > button{
+    padding: 5px 25px;
+    margin: 10px 0;
+}
+}

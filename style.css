@@ -288,7 +288,8 @@ li {
     flex-direction: column;
   }
   .control_img > img {
-    width: 400px;
+    width: 350px;
+    padding: 0 2%;
   }
 }
 

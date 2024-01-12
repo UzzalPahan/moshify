@@ -25,11 +25,9 @@
 }
 
 .card-header {
-  background-color: #3498db;
+  background-color: #00d9ff;
   color: #fff;
   padding: 30px 60px 10px 25px;
-  
-
 }
 
 .card-header > h2 {
@@ -61,7 +59,7 @@
 }
 
 ul {
-  list-style-image: url("/icons/tick.svg");
+  list-style-image: url("../../icons/tick.svg");
   margin-top: 0;
 }
 

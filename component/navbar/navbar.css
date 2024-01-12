@@ -31,7 +31,7 @@ nav > img{
     position: relative;
 }
 .nav-links > ul > li > a{
-    color: #fff;
+    color: #a9a5ae;
     text-decoration: none;
 }
 .nav-links > ul > li::after{

@@ -219,18 +219,18 @@ nav > img {
 }
 
 .card-header > h2 {
-  margin-top: 4px;
+  margin-top: 4px 0;
   font-size: 2rem;
   color: #fff;
 }
 .month {
   font-size: 1rem;
-  margin-left: 8px;
+  margin:16px 0 0 10px;
 }
 .percentage {
   font-size: 1rem;
-  background-color: aqua;
-  padding: 2px 6px;
+  background-color: #126de4;
+  padding: 10px 12px;
   border-radius: 40px;
   margin-left: 8px;
 }
@@ -243,14 +243,17 @@ nav > img {
   font-size: 1.5em;
   font-weight: bold;
   color: #333;
+  padding: 10px 4px;
 }
 
-ul {
-  list-style-image: url("../../icons/tick.svg");
+.card-body > ul {
+  list-style-image: url("icons/tick.svg");
   margin-top: 0;
+  padding-left: 24px;
 }
 
-li {
+.card-body > ul > li {
+  color: #1b0760;
   margin-bottom: 8px;
   padding: 5px 0;
 }
@@ -258,7 +261,7 @@ li {
 .buy-button {
   margin-top: 30px;
   background: none;
-  color: #000;
+  color: #1b0760;
   border: 2px solid #1b0760;
   padding: 10px 20px;
   font-size: 1em;
@@ -331,7 +334,7 @@ li {
     width: 2.5rem;
   }
   .uses_img > img {
-    width: 25rem;
+    width: 22rem;
   }
   .uses_text > .read_more {
     background: none;
@@ -444,19 +447,21 @@ li {
 .ads {
   width: 60vw;
   margin: 100px auto;
+
 }
 .ads_text_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: -160px;
   background-color: #2584ff;
   width: 70vw;
   padding: 2% 4%;
   color: #fff;
   border-radius: 10px;
-  position: absolute;
   z-index: 5;
+  position: relative;
+
 }
 .ads_text > p {
   padding-top: 5px;
@@ -491,7 +496,8 @@ li {
 /* footer css  */
 footer {
   background-color: #000;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 .footer {
   color: #fff;
@@ -506,9 +512,7 @@ footer {
   padding-top: 20px;
   color: #919191;
 }
-ul {
-  list-style: none;
-}
+
 .products > ul > li {
   padding-top: 10px;
   color: #919191;

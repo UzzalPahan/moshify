@@ -12,7 +12,6 @@
 
 }
 .card {
-  max-width: 500px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,12 +57,12 @@
   color: #333;
 }
 
-ul {
+.card-body > ul {
   list-style-image: url("../../icons/tick.svg");
   margin-top: 0;
 }
 
-li {
+.card-body > ul > li {
   margin-bottom: 8px;
   padding: 5px 0;
 }

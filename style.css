@@ -258,6 +258,67 @@ li {
 /* Package Card section End  */
 /* Package Section End  */
 
+/* service section  */
+.uses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+.uses_text > img {
+  width: 4rem;
+}
+.uses_content {
+  padding: 1.5rem 0;
+}
+.uses_content > h2 {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+.uses_content > p {
+  line-height: 1.5rem;
+}
+
+.uses_img > img {
+  width: 45rem;
+}
+.uses_text > .read_more {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #ff3401;
+}
+
+/* responsive  */
+@media screen and (max-width: 768px) {
+  .uses {
+    flex-direction: column-reverse;
+  }
+  .fast {
+    flex-direction: column;
+  }
+  .support {
+    flex-direction: column;
+  }
+  .uses_text > img {
+    width: 2.5rem;
+  }
+  .uses_img > img {
+    width: 25rem;
+  }
+  .uses_text > .read_more {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff3401;
+  }
+}
 /* control section  */
 
 .container {
@@ -324,6 +385,19 @@ li {
 }
 .testimonial_text {
   font-size: 1.5rem;
+}
+.testimonial_text > q {
+  line-height: 2rem;
+  font-style: italic;
+  color: #5c5577;
+}
+.testimonial_text >h5 {
+  margin-top: 60px;
+  color:#1b0760;
+}
+.testimonial_text >p {
+  color:#919191;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {

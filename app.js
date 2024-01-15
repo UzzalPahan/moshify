@@ -89,3 +89,81 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //fetch package card end 
+
+
+
+//fetch service start 
+document.addEventListener('DOMContentLoaded', function () {
+  // Fetch product data
+  fetch('data/service.json')
+    .then(response => response.json())
+    .then(packages => {
+      // Display product data in cards
+      const container = document.getElementById('service_section');
+      container.classList.add('service_section')
+
+      packages.forEach(singlePackage => {
+        const card = createPackageCard(singlePackage);
+        container.appendChild(card);
+      });
+    })
+    .catch(error => console.error('Error fetching product data:', error));
+
+  // Function to create a product card
+  function createPackageCard(singlePackage) {
+    const card = document.createElement('div');
+    card.classList.add('uses');
+    card.classList.add(singlePackage.class);
+
+
+
+    const usesText = document.createElement('div');
+    usesText.classList.add('uses_text')
+    usesText.classList.add(singlePackage.class)
+
+
+    const serviceTitle = document.createElement('h2');
+    serviceTitle.textContent = "Super Easy to Use";
+
+    const serviceDescription = document.createElement('p');
+    serviceDescription.textContent = "Super Easy to Use lorem50 askdjfkldjfldk ";
+
+    const serviceLogo = document.createElement('img');
+    serviceLogo.src = singlePackage.logo;
+    serviceLogo.alt = singlePackage.logo;
+
+
+    const serviceContent = document.createElement('div');
+    serviceContent.classList.add('uses_content')
+
+    const serviceBtn = document.createElement('button');
+    serviceBtn.classList.add('read_more');
+    serviceBtn.textContent = "READ MORE"
+    
+
+    const usesImg = document.createElement('div');
+    usesImg.classList.add('uses_img')
+
+    const mainImg = document.createElement('img');
+    mainImg.src = singlePackage.img;
+    mainImg.alt = "easy to use";
+
+    
+  
+
+
+    card.appendChild(usesText);
+    usesText.appendChild(serviceLogo);
+    usesText.appendChild(serviceContent);
+    usesText.appendChild(serviceBtn);
+    serviceContent.appendChild(serviceTitle);
+    serviceContent.appendChild(serviceDescription);
+    
+    card.appendChild(usesImg);
+    usesImg.appendChild(mainImg)
+    
+    return card;
+  }
+});
+
+//fetch service end

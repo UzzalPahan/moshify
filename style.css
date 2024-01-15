@@ -331,16 +331,22 @@ nav > img {
   color: var(--redColor);
 }
 
+.fast{
+  flex-direction: row-reverse;
+}
+.support{
+  flex-direction: row-reverse;
+}
 /* responsive  */
 @media screen and (max-width: 768px) {
   .uses {
     flex-direction: column-reverse;
   }
   .fast {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .support {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .uses_text > img {
     width: 2.5rem;

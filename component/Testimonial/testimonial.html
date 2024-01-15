@@ -1,27 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial </title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="testimonial.css">
-</head>
-<body>
+
+    <!-- Demo styles -->
+    
+  </head>
+
+  <body>
     <div class="container">
-        <div class="title">
-            <h1>What our Customer are saying</h1>
-            <p>Quis imsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan</p>
-        </div>
-        <div class="testimonial">
+      <div class="title">
+        <h1>What our Customer are saying</h1>
+        <p>
+          Quis imsum suspendisse ultrices gravida. Risus commodo viverra
+          maecenas accumsan
+        </p>
+      </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial">
             <div class="testimonial_img">
-                <img src="/images/testimonial.jpg" alt="testimonial ">
+              <img src="../../images/testimonial.jpg" alt="testimonial " />
             </div>
             <div class="testimonial_text">
-                <q>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. <br> Quis impsum suspendisse ultrices gravida. Risus <br> Commodo viverra maecenas accumsan lacus <br> vel facilisis.</q>
-                <h5>--Jhon Lumeo</h5>
-                <p>Mosh Company CEO</p>
+              <q
+                >Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br />
+                incididunt ut labore et dolore magna aliqua. <br />
+                Quis impsum suspendisse ultrices gravida. Risus <br />
+                Commodo viverra maecenas accumsan lacus <br />
+                vel facilisis.</q
+              >
+              <h5>--Jhon Lumeo</h5>
+              <p>Mosh Company CEO</p>
             </div>
+          </div>
         </div>
+        <div class="swiper-slide">
+          <div class="testimonial">
+            <div class="testimonial_img">
+              <img src="../../images/testimonial.jpg" alt="testimonial " />
+            </div>
+            <div class="testimonial_text">
+              <q
+                >Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br />
+                incididunt ut labore et dolore magna aliqua. <br />
+                Quis impsum suspendisse ultrices gravida. Risus <br />
+                Commodo viverra maecenas accumsan lacus <br />
+                vel facilisis.</q
+              >
+              <h5>--Jhon Lumeo</h5>
+              <p>Mosh Company CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial">
+            <div class="testimonial_img">
+              <img src="../../images/testimonial.jpg" alt="testimonial " />
+            </div>
+            <div class="testimonial_text">
+              <q
+                >Lorem ipsum dolor sit amet, consectetur <br />
+                adipiscing elit, sed do eiusmod tempor <br />
+                incididunt ut labore et dolore magna aliqua. <br />
+                Quis impsum suspendisse ultrices gravida. Risus <br />
+                Commodo viverra maecenas accumsan lacus <br />
+                vel facilisis.</q
+              >
+              <h5>--Jhon Lumeo</h5>
+              <p>Mosh Company CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-</body>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
+
+<!-- <div class="container">
+    <div class="title">
+      <h1>What our Customer are saying</h1>
+      <p>
+        Quis imsum suspendisse ultrices gravida. Risus commodo viverra
+        maecenas accumsan
+      </p>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial_img">
+        <img src="images/testimonial.jpg" alt="testimonial " />
+      </div>
+      <div class="testimonial_text">
+        <q
+          >Lorem ipsum dolor sit amet, consectetur <br />
+          adipiscing elit, sed do eiusmod tempor <br />
+          incididunt ut labore et dolore magna aliqua. <br />
+          Quis impsum suspendisse ultrices gravida. Risus <br />
+          Commodo viverra maecenas accumsan lacus <br />
+          vel facilisis.</q
+        >
+        <h5>--Jhon Lumeo</h5>
+        <p>Mosh Company CEO</p>
+      </div>
+    </div>
+  </div> -->

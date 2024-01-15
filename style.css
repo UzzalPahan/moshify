@@ -408,6 +408,9 @@ nav > img {
   }
 }
 
+
+
+
 /* testimonial  */
 .container {
   padding: 2% 6%;
@@ -444,6 +447,28 @@ nav > img {
   font-size: 1rem;
 }
 
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   .testimonial {
     flex-direction: column;
@@ -460,6 +485,7 @@ nav > img {
     font-size: 1.2rem;
   }
 }
+
 
 /* ads section  */
 .ads {

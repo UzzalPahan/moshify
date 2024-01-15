@@ -1,36 +1,36 @@
 [
     {
-        "logo": "../../icons/easy.svg",
+        "logo": "icons/easy.svg",
         "title": "hello world",
         "description": "lorem asdf kjdljjjjjjjlkkkkkkkkkkkkkkkkkkkkkk",
         "readmore": "read more",
-        "img": "../../images/easy.jpg"
+        "img": "images/easy.jpg"
 
     },
     {
-        "logo": "../../icons/computer.svg",
+        "logo": "icons/computer.svg",
         "title": "hello world",
         "description": "lorem asdf kjdljjjjjjjlkkkkkkkkkkkkkkkkkkkkkk",
         "readmore": "read more",
-        "img": "../../images/fast.jpg",
+        "img": "images/fast.jpg",
         "class": "fast"
 
     },
     {
-        "logo": "../../icons/easy.svg",
+        "logo": "icons/easy.svg",
         "title": "hello world",
         "description": "lorem asdf kjdljjjjjjjlkkkkkkkkkkkkkkkkkkkkkk",
         "readmore": "read more",
-        "img": "../../images/easy.jpg",
+        "img": "images/easy.jpg",
         "class": "wordpress"
 
     },
     {
-        "logo": "../../icons/computer.svg",
+        "logo": "icons/computer.svg",
         "title": "hello world",
         "description": "lorem asdf kjdljjjjjjjlkkkkkkkkkkkkkkkkkkkkkk",
         "readmore": "read more",
-        "img": "../../images/fast.jpg",
+        "img": "images/fast.jpg",
         "class": "support"
 
 

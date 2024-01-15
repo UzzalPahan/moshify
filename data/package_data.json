@@ -1,0 +1,39 @@
+      [
+        {
+          "id": 1,
+          "name": "Basic Plan",
+          "price": 4.99,
+          "description": "Our Basic hosting package is perfect for individuals or small businesses looking to establish an online presence. Features include:",
+          "features": [
+            "10 GB of storage",
+            "100 GB bandwidth",
+            "1 domain",
+            "5 email accounts"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Standard Plan",
+          "price": 9.99,
+          "description": "Upgrade to our Standard hosting plan for more resources and enhanced capabilities. This plan includes:",
+          "features": [
+            "50 GB of storage",
+            "500 GB bandwidth",
+            "5 domains",
+            "20 email accounts"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Premium Plan",
+          "price": 19.99,
+          "description": "Experience top-tier hosting with our Premium plan. Ideal for growing businesses, this package provides:",
+          "features": [
+            "100 GB of storage",
+            "Unlimited bandwidth",
+            "10 domains",
+            "50 email accounts"
+          ]
+        }
+      ]
+      

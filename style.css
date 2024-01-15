@@ -4,14 +4,26 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+:root{
+  --whiteColor: #fff;
+  --primaryColor: #1b0760;
+  --blackColor: #000;
+  --redColor: #f44336;
+  --secondBlack: #a9a5ae;
+  --thirdBlack: #847d98;
+  --cardColor: #00d9ff;
+  --blackTestimonial: #5c5577;
+  --listColor: #919191;
+  --percentage: #126de4;
+  --cardHeader: #00d9ff;
+}
 /* Reuseable class start  */
 .container {
   padding: 2% 6%;
 }
 
 .text-white {
-  color: #fff;
+  color: var(--whiteColor);
 }
 .text-ddd {
   color: #d2cfd9;
@@ -23,13 +35,13 @@
   padding: 20px;
 }
 .primary_color {
-  color: #1b0760;
+  color: var(--primaryColor);
 }
 /* Reuseable class End  */
 
 /* Top Nav Section Start */
 header {
-  background-color: #000;
+  background-color: var(--blackColor);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   width: 100%;
   height: 100%;
@@ -59,14 +71,14 @@ nav > img {
   position: relative;
 }
 .nav-links > ul > li > a {
-  color: #a9a5ae;
+  color: var(--secondBlack);
   text-decoration: none;
 }
 .nav-links > ul > li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #f44336;
+  background-color: var(--redColor);
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -89,7 +101,7 @@ nav > img {
   font-size: 4rem;
 }
 .text_section > p {
-  color: #a9a5ae;
+  color: var(--secondBlack);
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -98,9 +110,9 @@ nav > img {
 }
 .btn {
   padding: 15px 25px;
-  color: #fff;
+  color: var(--whiteColor);
   text-transform: uppercase;
-  background-color: #ff3400;
+  background-color: var(--redColor);
   border-radius: 50px;
   outline: none;
   border: none;
@@ -116,12 +128,12 @@ nav > img {
   padding: 20px 0;
 }
 .title > h2 {
-  color: #1b0760;
+  color: var(--primaryColor);
   font-weight: bold;
   font-size: 2rem;
 }
 .title > p {
-  color: #847d98;
+  color: var(--thirdBlack);
   padding-top: 10px;
 }
 
@@ -141,9 +153,9 @@ nav > img {
   position: absolute;
   right: 260px;
   padding: 15px 25px;
-  color: #fff;
+  color: var(--whiteColor);
   text-transform: uppercase;
-  background-color: #ff3400;
+  background-color: var(--redColor);
   border-radius: 50px;
   outline: none;
   border: none;
@@ -172,9 +184,9 @@ nav > img {
 }
 .price > li:hover {
   padding: 5px 10px;
-  background-color: #00d9ff;
+  background-color: var(--cardColor);
   border-radius: 50px;
-  color: #fff;
+  color: var(--whiteColor);
   cursor: pointer;
 }
 /* responsive  */
@@ -189,7 +201,7 @@ nav > img {
 /* Package Card section Start  */
 #card_section {
   font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   margin: 0;
   display: flex;
   align-items: center;
@@ -201,7 +213,7 @@ nav > img {
 }
 .card {
   max-width: 500px;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -213,15 +225,15 @@ nav > img {
 }
 
 .card-header {
-  background-color: #00d9ff;
-  color: #fff;
+  background-color: var(--cardHeader);
+  color: var(--whiteColor);
   padding: 30px 60px 10px 25px;
 }
 
 .card-header > h2 {
   margin-top: 4px 0;
   font-size: 2rem;
-  color: #fff;
+  color: var(--whiteColor);
 }
 .month {
   font-size: 1rem;
@@ -229,7 +241,7 @@ nav > img {
 }
 .percentage {
   font-size: 1rem;
-  background-color: #126de4;
+  background-color: var(--percentage);
   padding: 10px 12px;
   border-radius: 40px;
   margin-left: 8px;
@@ -242,7 +254,7 @@ nav > img {
 .price {
   font-size: 1.5em;
   font-weight: bold;
-  color: #333;
+  color: var(--listColor);
   padding: 10px 4px;
 }
 
@@ -253,7 +265,7 @@ nav > img {
 }
 
 .card-body > ul > li {
-  color: #1b0760;
+  color: var(--primaryColor);
   margin-bottom: 8px;
   padding: 5px 0;
 }
@@ -261,8 +273,8 @@ nav > img {
 .buy-button {
   margin-top: 30px;
   background: none;
-  color: #1b0760;
-  border: 2px solid #1b0760;
+  color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
   padding: 10px 20px;
   font-size: 1em;
   cursor: pointer;
@@ -272,8 +284,8 @@ nav > img {
 }
 
 .buy-button:hover {
-  background-color: #1b0760;
-  color: #fff;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
 }
 
 @media screen and (max-width: 768px) {
@@ -316,7 +328,7 @@ nav > img {
   outline: none;
   cursor: pointer;
   font-size: 1.2rem;
-  color: #ff3401;
+  color: var(--redColor);
 }
 
 /* responsive  */
@@ -342,7 +354,7 @@ nav > img {
     outline: none;
     cursor: pointer;
     font-size: 1rem;
-    color: #ff3401;
+    color: var(--redColor);
   }
 }
 /* control section  */
@@ -402,7 +414,7 @@ nav > img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--whiteColor);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   padding: 20px;
 }
@@ -415,14 +427,14 @@ nav > img {
 .testimonial_text > q {
   line-height: 2rem;
   font-style: italic;
-  color: #5c5577;
+  color: var(--blackTestimonial);
 }
 .testimonial_text > h5 {
   margin-top: 60px;
-  color: #1b0760;
+  color: var(--primaryColor);
 }
 .testimonial_text > p {
-  color: #919191;
+  color: var(--listColor);
   font-size: 1rem;
 }
 
@@ -454,10 +466,11 @@ nav > img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: -160px;
-  background-color: #2584ff;
+  /* background-color: #2584ff; */
+  background-color: var(--percentage);
   width: 70vw;
   padding: 2% 4%;
-  color: #fff;
+  color: var(--whiteColor);
   border-radius: 10px;
   z-index: 5;
   position: relative;
@@ -468,8 +481,8 @@ nav > img {
 }
 .ads_text_container > button {
   padding: 10px 25px;
-  background-color: #00d8fe;
-  color: #fff;
+  background-color: var(--cardColor);
+  color: var(--whiteColor);
   border-radius: 40px;
   outline: none;
   border: none;
@@ -495,12 +508,15 @@ nav > img {
 
 /* footer css  */
 footer {
-  background-color: #000;
+  background-color: var(--blackColor);
   position: absolute;
   width: 100%;
 }
+footer  ul  li{
+  list-style: none;
+}
 .footer {
-  color: #fff;
+  color: var(--whiteColor);
   display: flex;
   justify-content: space-between;
   padding-top: 100px;
@@ -510,24 +526,24 @@ footer {
 }
 .brand > p {
   padding-top: 20px;
-  color: #919191;
+  color: var(--listColor);
 }
 
 .products > ul > li {
   padding-top: 10px;
-  color: #919191;
+  color: var(--listColor);
 }
 .company > ul > li {
   padding-top: 10px;
-  color: #919191;
+  color: var(--listColor);
 }
 .support > ul > li {
   padding-top: 10px;
-  color: #919191;
+  color: var(--listColor);
 }
 .domains > ul > li {
   padding-top: 10px;
-  color: #919191;
+  color: var(--listColor);
 }
 
 /* responsive  */
